@@ -16,10 +16,10 @@ from zoom_engine import build_zoom_keyframes
 from renderer import render_zoomed_video
 
 
-class AutoZoomApp:
+class ZoomAutomaticApp:
     def __init__(self, root: tk.Tk):
         self.root = root
-        self.root.title("AutoZoom - Filmcraft Companion")
+        self.root.title("Zoom Automatic")
         self.root.geometry("360x390")
         self.root.resizable(False, False)
 
@@ -71,14 +71,14 @@ class AutoZoomApp:
 
         self.status_label = ttk.Label(
             frame,
-            text="Escolha um vídeo para aplicar o AutoZoom.",
+            text="Escolha um vídeo para aplicar o Zoom Automatic.",
             foreground="#555"
         )
         self.status_label.pack(anchor="w", pady=(0, 12))
 
         self.run_btn = ttk.Button(
             frame,
-            text="Selecionar Vídeo e Gerar AutoZoom",
+            text="Selecionar Vídeo e Gerar Zoom Automatic",
             command=self.run_autozoom
         )
         self.run_btn.pack(fill="x")
@@ -100,7 +100,7 @@ class AutoZoomApp:
             return
 
         src = Path(input_path)
-        output_path = str(src.with_name(f"{src.stem}_autozoom.mp4"))
+        output_path = str(src.with_name(f"{src.stem}_zoom.mp4"))
 
         try:
             self.run_btn.config(state="disabled")
@@ -138,14 +138,14 @@ class AutoZoomApp:
                 progress_callback=self._update_progress
             )
 
-            self.status_label.config(text="Concluído! Arraste o arquivo para o Filmcraft.")
+            self.status_label.config(text="Concluído! Concluído! Vídeo pronto para edição.")
             messagebox.showinfo(
-                "AutoZoom Concluído",
+                "Zoom Automatic Concluído",
                 f"Vídeo salvo com sucesso em:\n{output_path}\n\n"
-                "Agora é só arrastar esse arquivo para a timeline do Filmcraft."
+                "Agora é só arrastar esse arquivo para o seu editor de vídeo."
             )
         except Exception as exc:
-            messagebox.showerror("Erro no AutoZoom", str(exc))
+            messagebox.showerror("Erro no Zoom Automatic", str(exc))
             self.status_label.config(text="Falha ao processar o vídeo.")
         finally:
             self.run_btn.config(state="normal")
@@ -153,5 +153,5 @@ class AutoZoomApp:
 
 if __name__ == "__main__":
     root = tk.Tk()
-    AutoZoomApp(root)
+    ZoomAutomaticApp(root)
     root.mainloop()

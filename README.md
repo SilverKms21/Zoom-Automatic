@@ -1,6 +1,6 @@
-# AutoZoom — Filmcraft Companion
+# Zoom-Automatic
 
-Ferramenta auxiliar para o **Filmcraft** no Linux que automatiza cortes dinâmicos de câmera (*punch-in* e *smooth zoom*) baseados nas pausas da fala e mantém o apresentador enquadrado automaticamente por meio de detecção facial.
+Ferramenta auxiliar para criadores de conteudo no Linux que automatiza cortes dinâmicos de câmera (*punch-in* e *smooth zoom*) baseados nas pausas da fala e mantém o apresentador enquadrado automaticamente por meio de detecção facial.
 
 Projetado especialmente para fluxos em que o editor roda em ambiente isolado (como via **Flatpak**), o AutoZoom processa o vídeo original, preserva a faixa de áudio sem perda e exporta um novo arquivo `.mp4` pronto para ser arrastado diretamente para a timeline.
 

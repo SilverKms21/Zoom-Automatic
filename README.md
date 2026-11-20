@@ -2,7 +2,7 @@
 
 Ferramenta auxiliar para criadores de conteudo no Linux que automatiza cortes dinâmicos de câmera (*punch-in* e *smooth zoom*) baseados nas pausas da fala e mantém o apresentador enquadrado automaticamente por meio de detecção facial.
 
-Projetado especialmente para fluxos em que o editor roda em ambiente isolado (como via **Flatpak**), o AutoZoom processa o vídeo original, preserva a faixa de áudio sem perda e exporta um novo arquivo `.mp4` pronto para ser arrastado diretamente para a timeline.
+Projetado especialmente para fluxos em que o editor roda em ambiente isolado (como via **Flatpak**), o Zoom Automatic processa o vídeo original, preserva a faixa de áudio sem perda e exporta um novo arquivo `.mp4` pronto para ser arrastado diretamente para a timeline.
 
 ---
 

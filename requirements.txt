@@ -1,1 +1,5 @@
 opencv-python-headless
+numpy
+
+# Opcional (necessário apenas para gerar o executável único)
+# pyinstaller

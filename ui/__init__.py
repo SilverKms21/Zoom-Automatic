@@ -1,0 +1,1 @@
+"""Componentes de interface gráfica estilo macOS para o Zoom Automatic."""
